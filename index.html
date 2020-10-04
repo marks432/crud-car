@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <form onsubmit="event.preventDefault(), submitCar()">
+                        <div class="form-group">
+                            <label for="marca">Marca del carro</label>
+                            <input type="text" class="form-control" id="marca" placeholder="Ingresa la marca del carro">
+                        </div>
+                        <div class="form-group">
+                            <label for="modelo">Modelo del carro</label>
+                            <input type="text" class="form-control" id="modelo" placeholder="Ingresa el modelo del carro">
+                        </div>
+                        <div class="form-group">
+                            <label for="color">Color del carro</label>
+                            <input type="text" class="form-control" id="color" placeholder="Ingresa el color del carro">
+                        </div>
+                        <div class="form-group">
+                            <label for="año">Año del carro</label>
+                            <input type="text" class="form-control" id="año" placeholder="Ingresa el año del carro">
+                        </div>
+                        <div class="form-group">
+                            <label for="precio">Precio del carro</label>
+                            <input type="text" class="form-control" id="precio" placeholder="Ingresa el precio del carro">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Color</th>
+                    <th>Año</th>
+                    <th>Precio</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="cars-table-body">
+                <!-- Aqui van mis filas -->
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
